@@ -7,13 +7,14 @@ export default function WhySolvent() {
             bgColor={'#000'}
             height={{ md: '50vh' }}
         >
-            <Center flexDirection={'column'}>
+            <Center flexDirection={'column'} >
                 <Heading
                     as={'h3'}
                     fontSize={{ md: '36px' }}
                     lineHeight={'43px'}
                     color={'#fff'}
                     mb={4}
+                    mt={'4rem'}
                 >
 
                     Why Solvent?

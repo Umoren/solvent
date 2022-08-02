@@ -3,9 +3,9 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 export default function CoverArea() {
     return (
         <Box
-            height={{ md: '100vh', base: '100%' }}
+            height={{ md: '80vh', base: '100%' }}
             px={{ base: 24 }}
-            bg="linear-gradient(0deg, #000704 0%, rgba(0, 7, 4, 0) 368.61%), url('assets/coverArea.png');"
+            backgroundImage="url('assets/coverArea.png')"
             display={'flex'}
             flexDirection={'column'}
             justifyContent={'center'}

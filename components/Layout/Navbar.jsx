@@ -8,13 +8,8 @@ import {
     Collapse,
     Icon,
     Link,
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
     useDisclosure,
-    Image,
 } from '@chakra-ui/react';
 import {
     HamburgerIcon,
@@ -28,14 +23,12 @@ export default function WithSubnavigation() {
     return (
         <Box>
             <Flex
-                bg={useColorModeValue('black', 'gray.800')}
+                bgColor={'transparent'}
+                backgroundImage="url('assets/coverArea.png')"
                 color={useColorModeValue('gray.600', 'white')}
                 minH={'60px'}
                 py={{ base: 8 }}
                 px={{ base: 24 }}
-                borderBottom={1}
-                borderStyle={'solid'}
-                borderColor={useColorModeValue('gray.200', 'gray.900')}
                 align={'center'}>
                 <Flex
                     flex={{ base: 1, md: 'auto' }}
