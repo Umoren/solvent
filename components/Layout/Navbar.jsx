@@ -28,7 +28,7 @@ export default function WithSubnavigation() {
                 color={useColorModeValue('gray.600', 'white')}
                 minH={'60px'}
                 py={{ base: 8 }}
-                px={{ base: 24 }}
+                px={{ base: 8 }}
                 align={'center'}>
                 <Flex
                     flex={{ base: 1, md: 'auto' }}

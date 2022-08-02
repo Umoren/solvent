@@ -10,6 +10,7 @@ export default function KnowledgePanel() {
             color={'#fff'}
             display={{ md: 'grid' }}
             placeContent={{ md: 'center' }}
+            border="none"
         >
             <Grid templateColumns={{ md: 'repeat(2, 1fr)' }}>
                 <GridItem
@@ -17,12 +18,15 @@ export default function KnowledgePanel() {
                     width={'100%'}
                     position={'relative'}
                     left={{ md: '65%' }}
+                    px={{ base: 8 }}
                 >
                     <Heading
                         as="h5"
                         fontSize={{ md: '27px' }}
                         lineHeight={'32.4px'}
                         fontWeight={'500'}
+
+                        mt={{ base: 8, md: 0 }}
                     >
                         Social Media Caption/Copywriting
                     </Heading>
@@ -62,6 +66,7 @@ export default function KnowledgePanel() {
                         alt="knowledge"
                         bg={'linear-gradient(270deg, #000000 13.68%, rgba(0, 0, 0, 0) 87.77%)'}
 
+                        mt={{ base: 8, md: 0 }}
                     />
                 </GridItem>
             </Grid>

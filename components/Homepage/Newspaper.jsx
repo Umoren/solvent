@@ -10,6 +10,8 @@ export default function Newspaper() {
             color={'#fff'}
             display={{ md: 'grid' }}
             placeContent={{ md: 'center' }}
+            border="none"
+            style={{ border: 'none' }}
         >
             <Grid templateColumns={{ md: 'repeat(2, 1fr)' }} gap={6}>
                 <GridItem>
@@ -21,10 +23,11 @@ export default function Newspaper() {
                 </GridItem>
 
                 <GridItem
-                    margin={'auto'}
+                    m={'auto'}
                     width={'100%'}
                     position={'relative'}
                     right={{ md: '35%' }}
+                    px={{ base: 8 }}
                 >
                     <Heading
                         as="h5"

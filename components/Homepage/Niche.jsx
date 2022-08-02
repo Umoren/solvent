@@ -7,13 +7,14 @@ export default function Niche() {
         <Box
             bgColor={'#000'}
             height={{ md: '50vh' }}
-            px={{ base: 24 }}
+            px={{ base: 8, md: 24 }}
             color={'#fff'}
             display={{ md: 'grid' }}
             placeContent={{ md: 'center' }}
+            border="none"
         >
-            <Grid templateColumns={{ md: 'repeat(2, 1fr)' }} gap={6}>
-                <GridItem>
+            <Grid templateColumns={{ md: 'repeat(2, 1fr)' }} gap={6} >
+                <GridItem textAlign={{ base: 'center', md: 'left' }}>
                     <Heading
                         as="h5"
                         fontWeight={'500'}
@@ -44,9 +45,9 @@ export default function Niche() {
                     </LinkBox>
                 </GridItem>
 
-                <GridItem>
+                <GridItem mb={{ base: 8, md: 0 }}>
 
-                    <Text>
+                    <Text lineHeight={'36px'}>
                         Our core specialties surround the influence of growth management through content creation and marketing,
                         PR and advertising, social media management and marketing, campaign deployment and email marketing, brand development
                         strategy and management, talent consultancy, advisory and management.

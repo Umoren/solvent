@@ -6,6 +6,8 @@ export default function WhySolvent() {
         <Box
             bgColor={'#000'}
             height={{ md: '50vh' }}
+            p={{ base: '2rem' }}
+            border="none"
         >
             <Center flexDirection={'column'} >
                 <Heading
@@ -21,7 +23,7 @@ export default function WhySolvent() {
                 </Heading>
                 <Text
                     fontSize={{ md: '16px' }}
-                    lineHeight={{ md: '36px' }}
+                    lineHeight={{ base: '36px' }}
                     fontWeight={'400'}
                     color={'#fff'}
                     mb={4}
@@ -38,6 +40,8 @@ export default function WhySolvent() {
                     variant={'solid'}
                     borderRadius={'none'}
                     color={'#fff'}
+                    padding={{ base: '1rem' }}
+
                 >
                     <Text
                         textTransform={'uppercase'}

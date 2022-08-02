@@ -10,13 +10,15 @@ export default function Newspaper() {
             color={'#fff'}
             display={{ md: 'grid' }}
             placeContent={{ md: 'center' }}
+            border="none"
         >
             <Grid templateColumns={{ md: 'repeat(2, 1fr)' }} gap={6}>
-                <GridItem>
+                <GridItem >
                     <Image
                         src="/assets/media.png"
                         alt="Newspaper"
                         bg={'linear-gradient(270deg, #000000 7.4%, rgba(0, 0, 0, 0) 87.77%)'}
+                        mt={{ base: 8, md: 0 }}
                     />
                 </GridItem>
 
@@ -25,6 +27,7 @@ export default function Newspaper() {
                     width={'100%'}
                     position={'relative'}
                     right={{ md: '35%' }}
+                    px={{ base: 8 }}
                 >
                     <Heading
                         as="h5"

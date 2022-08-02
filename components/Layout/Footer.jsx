@@ -6,26 +6,31 @@ export default function Footer() {
             bgColor={'#000'}
             color={'#fff'}
         >
-            <Flex flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-                <Box mb={'2.5rem'}>
+            <Flex flexDirection={'column'} justifyContent={'center'} alignItems={'center'}
+            >
+                <Box mb={'2.5rem'} mt={{ base: '2.5rem', md: 0 }}>
                     <Image
                         src="/assets/barChart.svg"
                         alt="footerIcon"
                         width={"65px"}
                         height={"65px"}
                         margin={'auto'}
+
                     />
-                    <Text
-                        fontWeight={'400'}
-                        fontSize={{ md: '20px' }}
-                        lineHeight={'46px'}
-                        textAlign={'center'}
-                        width={'55ch'}
-                    >
-                        Our job is to nurture your brand from the growth and development stage to a point
-                        of recognition and building a reputable online presence. We can go on,
-                        but we’ll let our portfolio speak for itself.
-                    </Text>
+                    <Box px={{ base: 8 }}>
+                        <Text
+                            fontWeight={'400'}
+                            fontSize={{ md: '20px' }}
+                            lineHeight={'46px'}
+                            textAlign={'center'}
+                            width={{ md: '55ch' }}
+                        >
+                            Our job is to nurture your brand from the growth and development stage to a point
+                            of recognition and building a reputable online presence. We can go on,
+                            but we’ll let our portfolio speak for itself.
+                        </Text>
+                    </Box>
+
                 </Box>
                 <Box borderTop={'1px solid #FFFFFF'} opacity={'0.2'} width={'100%'}>
                 </Box>
