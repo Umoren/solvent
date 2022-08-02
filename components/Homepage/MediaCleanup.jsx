@@ -41,7 +41,7 @@ export default function Newspaper() {
                     <Text
                         fontWeight={'400'}
                         fontSize={{ md: '16px' }}
-                        lineHeight={'20px'}
+                        lineHeight={'30px'}
                         width={{ md: '60ch' }}
                     >
                         Defamation and other internet reputational damages have always caused more harm than good. On the other hand, it only takes one online defamatory post to harm someone&apos;s reputation. As a result, it is

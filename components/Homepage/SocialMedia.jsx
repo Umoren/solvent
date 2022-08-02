@@ -34,7 +34,7 @@ export default function KnowledgePanel() {
                     <Text
                         fontWeight={'400'}
                         fontSize={{ md: '16px' }}
-                        lineHeight={'20px'}
+                        lineHeight={'30px'}
                         width={{ md: '60ch' }}
                     >
                         We help clients organize social media videos, pictures, and written narratives in the form of captions. As part of

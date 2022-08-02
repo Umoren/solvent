@@ -23,7 +23,7 @@ export default function WhySolvent() {
                 </Heading>
                 <Text
                     fontSize={{ md: '16px' }}
-                    lineHeight={{ base: '20px' }}
+                    lineHeight={{ base: '30px' }}
                     fontWeight={'400'}
                     color={'#fff'}
                     mb={4}

@@ -21,7 +21,7 @@ export default function Footer() {
                         <Text
                             fontWeight={'400'}
                             fontSize={{ md: '20px' }}
-                            lineHeight={'20px'}
+                            lineHeight={'30px'}
                             textAlign={'center'}
                             width={{ md: '55ch' }}
                         >
