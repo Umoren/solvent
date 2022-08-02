@@ -35,7 +35,7 @@ export default function KnowledgePanel() {
                     <Text
                         fontWeight={'400'}
                         fontSize={{ md: '16px' }}
-                        lineHeight={'36px'}
+                        lineHeight={'20px'}
                         width={{ md: '60ch' }}
                     >
                         As Google expands, the number of themes that accelerate a robust outcome, the panels are more significant for marketing. Our skills, on the other hand, are put to use in the creation of an individual

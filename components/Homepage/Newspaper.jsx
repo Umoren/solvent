@@ -41,7 +41,7 @@ export default function Newspaper() {
                     <Text
                         fontWeight={'400'}
                         fontSize={{ md: '16px' }}
-                        lineHeight={'36px'}
+                        lineHeight={'20px'}
                         width={{ md: '60ch' }}
                     >
                         The brand provides newspaper article writing services for publications. These articles connect a large readership with

@@ -47,7 +47,7 @@ export default function Niche() {
 
                 <GridItem mb={{ base: 8, md: 0 }}>
 
-                    <Text lineHeight={'36px'}>
+                    <Text lineHeight={'20px'}>
                         Our core specialties surround the influence of growth management through content creation and marketing,
                         PR and advertising, social media management and marketing, campaign deployment and email marketing, brand development
                         strategy and management, talent consultancy, advisory and management.
