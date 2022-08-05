@@ -1,15 +1,11 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme } from '@chakra-ui/react'
 
-const overrides = {
-  components: {
-    Box: {
-      baseStyle: {
-        border: "none"
-      }
-    }
-
+const theme = extendTheme({
+  fonts: {
+    heading: `'Syne', sans-serif`,
+    body: `'Fira Sans', sans-serif`,
+    button: `'IBM Plex Sans', sans-serif`
   },
-};
+})
 
-const theme = extendTheme(overrides);
-export default theme;
+export default theme
