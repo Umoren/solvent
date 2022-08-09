@@ -1,8 +1,8 @@
-import { Button, Box, Icon } from "@chakra-ui/react";
+import { Box, Icon } from "@chakra-ui/react";
 import CoverArea from "../components/Homepage/CoverArea";
 import KnowledgePanel from "../components/Homepage/KnowledgePanel";
 import MediaCleanup from "../components/Homepage/MediaCleanup";
-
+import Navbar from "../components/Homepage/Navbar";
 import Newspaper from "../components/Homepage/Newspaper";
 import Niche from "../components/Homepage/Niche";
 import SocialMedia from "../components/Homepage/SocialMedia";
@@ -13,6 +13,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons"
 export default function Home() {
   return (
     <div >
+      <Navbar />
       <CoverArea />
       <WhySolvent />
       <Niche />

@@ -16,6 +16,7 @@ import {
     CloseIcon,
     ArrowForwardIcon,
 } from '@chakra-ui/icons';
+import { Link as NextLink } from 'next/link';
 
 export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -97,7 +98,7 @@ const DesktopNav = () => {
     return (
         <Stack direction={'row'} spacing={4}>
             {NAV_ITEMS.map((navItem) => (
-                <Box key={navItem.label}>
+                < Box key={navItem.label} >
                     <Link
                         p={2}
                         href={navItem.href ?? '#'}
@@ -114,8 +115,9 @@ const DesktopNav = () => {
                     </Link>
 
                 </Box>
-            ))}
-        </Stack>
+            ))
+            }
+        </Stack >
     );
 };
 
@@ -184,16 +186,18 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
     {
         label: 'Home',
+        href: '/',
     },
     {
         label: 'About Us',
+        href: '/about',
     },
     {
         label: 'Blog',
-        href: '#',
+        href: '/blog',
     },
     {
         label: 'Contact Us',
-        href: '#',
+        href: '/contact',
     },
 ];

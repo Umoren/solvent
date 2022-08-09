@@ -17,7 +17,7 @@ export default function Footer() {
                         margin={'auto'}
 
                     />
-                    <Box px={{ base: 8 }}>
+                    <Box px={{ base: 8 }} mt={{ base: 6 }}>
                         <Text
                             fontWeight={'400'}
                             fontSize={{ md: '20px' }}

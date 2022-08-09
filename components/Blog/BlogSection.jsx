@@ -5,7 +5,7 @@ export default function BlogSection() {
     return (
         <Box
             bgColor={'#000'}
-            height={{ md: '80vh' }}
+            py={24}
             color={'#fff'}
             display={{ md: 'grid' }}
             placeContent={{ md: 'center' }}
