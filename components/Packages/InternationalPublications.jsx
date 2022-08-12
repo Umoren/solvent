@@ -16,15 +16,12 @@ const InternationalPublications = () => {
                 </Text>
 
 
-                <Grid templateColumns={{ md: 'repeat(7, 1fr)' }} gridGap={8} mt={8}>
+                <Grid templateColumns={{ md: 'repeat(6, 1fr)' }} gridGap={8} mt={8}>
                     <GridItem>
                         <Image src="/assets/forbesReal.png" alt="forbes" />
                     </GridItem>
                     <GridItem>
                         <Image src="/assets/yahooFinance.png" alt="yahoo finance" />
-                    </GridItem>
-                    <GridItem>
-                        <Image src="/assets/yahooNews.png" alt="yahoo news" />
                     </GridItem>
                     <GridItem>
                         <Image src="/assets/yahooNews.png" alt="yahoo news" />

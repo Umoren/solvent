@@ -16,7 +16,7 @@ import {
     CloseIcon,
     ArrowForwardIcon,
 } from '@chakra-ui/icons';
-import { Link as NextLink } from 'next/link';
+import NextLink from "next/link"
 
 export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -25,7 +25,7 @@ export default function WithSubnavigation() {
         <Box>
             <Flex
                 bgColor={'transparent'}
-                backgroundImage="url('assets/coverArea.png')"
+                backgroundImage="url('assets/about.png')"
                 color={useColorModeValue('gray.600', 'white')}
                 minH={'60px'}
                 py={{ base: 8 }}
@@ -45,7 +45,7 @@ export default function WithSubnavigation() {
                     />
                 </Flex>
                 <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-                    <img src="/assets/solvent.svg" alt="Logo" />
+                    <img src="/assets/solvent.png" alt="Logo" />
 
                     <Flex display={{ base: 'none', md: 'flex' }} width="100%" alignItems="center" justifyContent="center" ml={10}>
                         <DesktopNav />
@@ -57,10 +57,8 @@ export default function WithSubnavigation() {
                     justify={'flex-end'}
                     direction={'row'}
                     spacing={6}>
-                    <Link
-                        as={NextLink}
-                        href="/packages"
-                    >
+
+                    <Link href="/packages">
                         <Button
                             display={{ base: 'none', md: 'inline-flex' }}
                             fontSize={'xs'}
@@ -70,7 +68,6 @@ export default function WithSubnavigation() {
                             variant={'outline'}
                             bg={'transparent'}
                             borderRadius={'none'}
-                            href={'#'}
                             padding="1.5rem"
                             _hover={{
                                 bg: 'white',
@@ -86,6 +83,7 @@ export default function WithSubnavigation() {
                             />
                         </Button>
                     </Link>
+
                 </Stack>
             </Flex>
 
@@ -105,7 +103,6 @@ const DesktopNav = () => {
             {NAV_ITEMS.map((navItem) => (
                 < Box key={navItem.label} >
                     <Link
-                        as={NextLink}
                         p={2}
                         href={navItem.href ?? '#'}
                         fontSize={'sm'}
@@ -159,35 +156,31 @@ const MobileNavItem = ({ label, children, href }) => {
                     color={useColorModeValue('gray.600', 'gray.200')}>
                     {label}
                 </Text>
-                <Link
-                    as={NextLink}
-                    href="/packages"
-                >
-                    <Button
-                        display={{ base: 'none', md: 'inline-flex' }}
-                        fontSize={'xs'}
-                        textTransform={'uppercase'}
-                        fontWeight={600}
-                        color={'white'}
-                        variant={'outline'}
-                        bg={'transparent'}
-                        borderRadius={'none'}
-                        href={'#'}
-                        padding="1.5rem"
-                        _hover={{
-                            bg: 'white',
-                            color: '#000'
-                        }}>
-                        Explore Our packages
-                        <Icon
-                            as={ArrowForwardIcon}
-                            transition={'all .25s ease-in-out'}
-                            w={4}
-                            h={4}
-                            ml={8}
-                        />
-                    </Button>
-                </Link>
+                <Button
+                    display={{ base: 'none', md: 'inline-flex' }}
+                    fontSize={'xs'}
+                    textTransform={'uppercase'}
+                    fontWeight={600}
+                    color={'white'}
+                    variant={'outline'}
+                    bg={'transparent'}
+                    borderRadius={'none'}
+                    href={'/packages'}
+                    padding="1.5rem"
+                    _hover={{
+                        bg: 'white',
+                        color: '#000'
+                    }}>
+                    Explore Our packages
+                    <Icon
+                        as={ArrowForwardIcon}
+                        transition={'all .25s ease-in-out'}
+                        w={4}
+                        h={4}
+                        ml={8}
+                    />
+                </Button>
+
             </Flex>
         </Stack>
     );

@@ -24,7 +24,7 @@ export default function WithSubnavigation() {
         <Box>
             <Flex
                 bgColor={'transparent'}
-                backgroundImage="url('assets/coverArea.png')"
+                backgroundImage="url('assets/contact.png')"
                 color={useColorModeValue('gray.600', 'white')}
                 minH={'60px'}
                 py={{ base: 8 }}

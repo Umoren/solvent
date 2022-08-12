@@ -16,6 +16,7 @@ import {
     CloseIcon,
     ArrowForwardIcon,
 } from '@chakra-ui/icons';
+import NextLink from "next/link"
 
 export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -44,7 +45,7 @@ export default function WithSubnavigation() {
                     />
                 </Flex>
                 <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-                    <img src="/assets/solvent.svg" alt="Logo" />
+                    <img src="/assets/solvent.png" alt="Logo" />
 
                     <Flex display={{ base: 'none', md: 'flex' }} width="100%" alignItems="center" justifyContent="center" ml={10}>
                         <DesktopNav />
@@ -56,30 +57,33 @@ export default function WithSubnavigation() {
                     justify={'flex-end'}
                     direction={'row'}
                     spacing={6}>
-                    <Button
-                        display={{ base: 'none', md: 'inline-flex' }}
-                        fontSize={'xs'}
-                        textTransform={'uppercase'}
-                        fontWeight={600}
-                        color={'white'}
-                        variant={'outline'}
-                        bg={'transparent'}
-                        borderRadius={'none'}
-                        href={'#'}
-                        padding="1.5rem"
-                        _hover={{
-                            bg: 'white',
-                            color: '#000'
-                        }}>
-                        Explore Our packages
-                        <Icon
-                            as={ArrowForwardIcon}
-                            transition={'all .25s ease-in-out'}
-                            w={4}
-                            h={4}
-                            ml={8}
-                        />
-                    </Button>
+
+                    <Link href="/packages">
+                        <Button
+                            display={{ base: 'none', md: 'inline-flex' }}
+                            fontSize={'xs'}
+                            textTransform={'uppercase'}
+                            fontWeight={600}
+                            color={'white'}
+                            variant={'outline'}
+                            bg={'transparent'}
+                            borderRadius={'none'}
+                            padding="1.5rem"
+                            _hover={{
+                                bg: 'white',
+                                color: '#000'
+                            }}>
+                            Explore Our packages
+                            <Icon
+                                as={ArrowForwardIcon}
+                                transition={'all .25s ease-in-out'}
+                                w={4}
+                                h={4}
+                                ml={8}
+                            />
+                        </Button>
+                    </Link>
+
                 </Stack>
             </Flex>
 
@@ -152,30 +156,14 @@ const MobileNavItem = ({ label, children, href }) => {
                     color={useColorModeValue('gray.600', 'gray.200')}>
                     {label}
                 </Text>
-                <Button
-                    display={{ base: 'none', md: 'inline-flex' }}
-                    fontSize={'xs'}
-                    textTransform={'uppercase'}
-                    fontWeight={600}
-                    color={'white'}
-                    variant={'outline'}
-                    bg={'transparent'}
-                    borderRadius={'none'}
-                    href={'#'}
-                    padding="1.5rem"
-                    _hover={{
-                        bg: 'white',
-                        color: '#000'
-                    }}>
-                    Explore Our packages
-                    <Icon
-                        as={ArrowForwardIcon}
-                        transition={'all .25s ease-in-out'}
-                        w={4}
-                        h={4}
-                        ml={8}
-                    />
-                </Button>
+                <Stack
+                    flex={{ base: 1, md: 0 }}
+                    justify={'flex-end'}
+                    direction={'row'}
+                    spacing={6}>
+
+                </Stack>
+
             </Flex>
         </Stack>
     );
