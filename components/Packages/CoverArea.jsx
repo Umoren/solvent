@@ -147,7 +147,7 @@ export default function CoverArea() {
                             >
                                 We recognize that liaising with the top social media blogs is a difficult task for the majority of business owners.
                                 Our role is to facilitate communication between these clients and the blogs.
-                                However, we act as an intermediary between a client and the blog's administrators.
+                                However, we act as an intermediary between a client and the blog&apos;s administrators.
                             </Text>
                         </Center>
                     </Box>
@@ -222,7 +222,7 @@ export default function CoverArea() {
                                 my={8}
                             >
                                 Defamation and other internet reputational damages have always caused more harm than good.
-                                On the other hand, it only takes one online defamatory post to harm someone's reputation.
+                                On the other hand, it only takes one online defamatory post to harm someone&apos;s reputation.
                                 As a result, it is critical to erase the false and misleading assertions swiftly,
                                 to prevent further spread and curb impending damages.
                             </Text>
