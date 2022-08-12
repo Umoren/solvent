@@ -16,7 +16,7 @@ import {
     CloseIcon,
     ArrowForwardIcon,
 } from '@chakra-ui/icons';
-import { Link as NextLink } from 'next/link';
+import NextLink from "next/link"
 
 export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -57,7 +57,9 @@ export default function WithSubnavigation() {
                     justify={'flex-end'}
                     direction={'row'}
                     spacing={6}>
+
                     <Button
+                        as={Link}
                         display={{ base: 'none', md: 'inline-flex' }}
                         fontSize={'xs'}
                         textTransform={'uppercase'}
@@ -66,7 +68,7 @@ export default function WithSubnavigation() {
                         variant={'outline'}
                         bg={'transparent'}
                         borderRadius={'none'}
-                        href={'#'}
+                        href={'/packages'}
                         padding="1.5rem"
                         _hover={{
                             bg: 'white',
@@ -81,6 +83,7 @@ export default function WithSubnavigation() {
                             ml={8}
                         />
                     </Button>
+
                 </Stack>
             </Flex>
 
@@ -155,6 +158,7 @@ const MobileNavItem = ({ label, children, href }) => {
                 </Text>
                 <Button
                     display={{ base: 'none', md: 'inline-flex' }}
+                    as={Link}
                     fontSize={'xs'}
                     textTransform={'uppercase'}
                     fontWeight={600}
@@ -162,7 +166,7 @@ const MobileNavItem = ({ label, children, href }) => {
                     variant={'outline'}
                     bg={'transparent'}
                     borderRadius={'none'}
-                    href={'#'}
+                    href={'/packages'}
                     padding="1.5rem"
                     _hover={{
                         bg: 'white',
@@ -177,6 +181,7 @@ const MobileNavItem = ({ label, children, href }) => {
                         ml={8}
                     />
                 </Button>
+
             </Flex>
         </Stack>
     );
