@@ -1,13 +1,13 @@
-import { Box, Heading, Grid, Text, GridItem, Link, LinkBox, Icon } from "@chakra-ui/react";
-import { Link as NextLink } from 'next/link';
+import { Box, Heading, Grid, Text, GridItem, Link, Icon } from "@chakra-ui/react";
+
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 
 export default function Niche() {
     return (
         <Box
             bgColor={'#000'}
-            height={{ md: '50vh' }}
             px={{ base: 8, md: 24 }}
+            py={{ base: '4rem' }}
             color={'#fff'}
             display={{ md: 'grid' }}
             placeContent={{ md: 'center' }}
@@ -18,31 +18,29 @@ export default function Niche() {
                     <Heading
                         as="h5"
                         fontWeight={'500'}
-                        fontSize={{ md: '36px' }}
+                        fontSize={{ base: '36px' }}
                         lineHeight={'43.2px'}
                         width={{ md: '20ch' }}
+                        py={4}
                     >
                         Carving a niche for ourselves
                     </Heading>
 
-                    <LinkBox mt={4}>
-                        <Link
-                            as={NextLink}
-                            to="/"
-                            color="#15BE60"
-                            fontWeight="400"
-                            lineHeight="19.2px"
-                        >
-                            Explore All Packages
-                            <Icon
-                                as={ArrowForwardIcon}
-                                transition={'all .25s ease-in-out'}
-                                w={4}
-                                h={4}
-                                ml={2}
-                            />
-                        </Link>
-                    </LinkBox>
+                    <Link
+                        href={'/packages'}
+                        color="#15BE60"
+                        fontWeight="400"
+                        lineHeight="19.2px"
+                    >
+                        Explore All Packages
+                        <Icon
+                            as={ArrowForwardIcon}
+                            transition={'all .25s ease-in-out'}
+                            w={4}
+                            h={4}
+                            ml={2}
+                        />
+                    </Link>
                 </GridItem>
 
                 <GridItem mb={{ base: 8, md: 0 }}>

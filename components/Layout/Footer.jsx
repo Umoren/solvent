@@ -12,8 +12,8 @@ export default function Footer() {
                     <Image
                         src="/assets/barChart.svg"
                         alt="footerIcon"
-                        width={"65px"}
-                        height={"65px"}
+                        width={"45px"}
+                        height={"45px"}
                         margin={'auto'}
 
                     />

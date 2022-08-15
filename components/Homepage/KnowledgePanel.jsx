@@ -6,8 +6,8 @@ export default function KnowledgePanel() {
     return (
         <Box
             bgColor={'#000'}
-            height={{ md: '80vh' }}
             color={'#fff'}
+            py={{ base: '2rem' }}
             display={{ md: 'grid' }}
             placeContent={{ md: 'center' }}
             border="none"
@@ -23,10 +23,10 @@ export default function KnowledgePanel() {
                 >
                     <Heading
                         as="h5"
-                        fontSize={{ md: '27px' }}
+                        fontSize={{ base: '36px' }}
                         lineHeight={'32.4px'}
                         fontWeight={'500'}
-
+                        py={4}
                         mt={{ base: 8, md: 0 }}
                     >
                         Google Knowledge Panel
@@ -43,8 +43,7 @@ export default function KnowledgePanel() {
                     </Text>
                     <LinkBox mt={4}>
                         <Link
-                            as={NextLink}
-                            to="/"
+                            href="/packages"
                             color="#15BE60"
                             fontWeight="400"
                             lineHeight="19.2px"

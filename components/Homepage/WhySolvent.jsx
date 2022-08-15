@@ -1,22 +1,23 @@
-import { Box, Center, Heading, Text, Button, Icon, Link } from "@chakra-ui/react";
+import { Box, Center, Heading, Text, Button, Icon, Link, } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 
 export default function WhySolvent() {
     return (
         <Box
             bgColor={'#000'}
-            height={{ md: '50vh' }}
-            p={{ base: '2rem' }}
+            py={{ base: '4rem' }}
+            px={{ base: '2rem' }}
             border="none"
         >
-            <Center flexDirection={'column'} >
+            <Center flexDirection={'column'} transition="all .25s ease" >
                 <Heading
-                    as={'h3'}
-                    fontSize={{ md: '36px' }}
+                    as={'h1'}
+                    fontSize={{ base: '36px' }}
                     lineHeight={'43px'}
                     color={'#fff'}
                     mb={4}
                     mt={'4rem'}
+
                 >
 
                     Why Solvent?
@@ -27,7 +28,7 @@ export default function WhySolvent() {
                     fontWeight={'400'}
                     color={'#fff'}
                     mb={4}
-                    textAlign={'center'}
+                    textAlign={{ md: 'center' }}
                     width={{ md: '73ch' }}
                 >
                     We started from a glassy dining table, forming the best-of-the-best players in the marketing industry on a mission to help people

@@ -18,22 +18,64 @@ const InternationalPublications = () => {
 
                 <Grid templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)' }} gridGap={8} mt={8}>
                     <GridItem>
-                        <Image src="/assets/forbesReal.png" alt="forbes" />
+                        <Image
+                            src="/assets/forbesReal.png"
+                            alt="forbes"
+                            opacity={0.7}
+                            _hover={{
+                                opacity: 1,
+                            }}
+                        />
                     </GridItem>
                     <GridItem>
-                        <Image src="/assets/yahooFinance.png" alt="yahoo finance" />
+                        <Image
+                            src="/assets/yahooFinance.png"
+                            alt="yahoo finance"
+                            opacity={0.7}
+                            _hover={{
+                                opacity: 1,
+                            }}
+                        />
                     </GridItem>
                     <GridItem>
-                        <Image src="/assets/yahooNews.png" alt="yahoo news" />
+                        <Image
+                            src="/assets/yahooNews.png"
+                            alt="yahoo news"
+                            opacity={0.7}
+                            _hover={{
+                                opacity: 1,
+                            }}
+                        />
                     </GridItem>
                     <GridItem>
-                        <Image src="/assets/cbs.png" alt="cbs news" />
+                        <Image
+                            src="/assets/cbs.png"
+                            alt="cbs news"
+                            opacity={0.7}
+                            _hover={{
+                                opacity: 1,
+                            }}
+                        />
                     </GridItem>
                     <GridItem>
-                        <Image src="/assets/fox.png" alt="fox news" />
+                        <Image
+                            src="/assets/fox.png"
+                            alt="fox news"
+                            opacity={0.7}
+                            _hover={{
+                                opacity: 1,
+                            }}
+                        />
                     </GridItem>
                     <GridItem>
-                        <Image src="/assets/bloomberg.png" alt="bloomberg news" />
+                        <Image
+                            src="/assets/bloomberg.png"
+                            alt="bloomberg news"
+                            opacity={0.7}
+                            _hover={{
+                                opacity: 1,
+                            }}
+                        />
                     </GridItem>
 
                 </Grid>

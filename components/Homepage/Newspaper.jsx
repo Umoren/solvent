@@ -6,8 +6,8 @@ export default function Newspaper() {
     return (
         <Box
             bgColor={'#000'}
-            height={{ md: '80vh' }}
             color={'#fff'}
+            py={{ base: '2rem' }}
             display={{ md: 'grid' }}
             placeContent={{ md: 'center' }}
             border="none"
@@ -31,9 +31,10 @@ export default function Newspaper() {
                 >
                     <Heading
                         as="h5"
-                        fontSize={{ md: '27px' }}
+                        fontSize={{ base: '36px' }}
                         lineHeight={'32.4px'}
                         fontWeight={'500'}
+                        py={4}
                     >
                         Newspaper Publications
                     </Heading>
@@ -49,8 +50,7 @@ export default function Newspaper() {
                     </Text>
                     <LinkBox mt={8}>
                         <Link
-                            as={NextLink}
-                            to="/"
+                            href="/packages"
                             color="#15BE60"
                             fontWeight="400"
                             lineHeight="19.2px"
