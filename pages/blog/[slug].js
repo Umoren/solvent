@@ -1,3 +1,4 @@
+/* eslint react/prop-types: 0 */
 import ReactMarkdown from "react-markdown"
 import Moment from "react-moment"
 import { fetchAPI } from "../api/blog"
