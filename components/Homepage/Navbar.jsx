@@ -127,10 +127,11 @@ const DesktopNav = () => {
 const MobileNav = () => {
     return (
         <Stack
-            bg={useColorModeValue('white', 'gray.800')}
+            bg={'#000'}
             p={4}
+            color={'white'}
             display={{ md: 'none' }}>
-            {NAV_ITEMS.map((navItem) => (
+            {MOBILE_NAV_ITEMS.map((navItem) => (
                 <MobileNavItem key={navItem.label} {...navItem} />
             ))}
         </Stack>
@@ -141,7 +142,7 @@ const MobileNavItem = ({ label, children, href }) => {
     const { isOpen, onToggle } = useDisclosure();
 
     return (
-        <Stack spacing={4} onClick={onToggle}>
+        <Stack spacing={4} onClick={onToggle} >
             <Flex
                 py={2}
                 as={Link}
@@ -153,33 +154,10 @@ const MobileNavItem = ({ label, children, href }) => {
                 }}>
                 <Text
                     fontWeight={600}
-                    color={useColorModeValue('gray.600', 'gray.200')}>
+                    color={useColorModeValue('gray.100', 'gray.200')}>
                     {label}
                 </Text>
-                <Button
-                    display={{ base: 'none', md: 'inline-flex' }}
-                    fontSize={'xs'}
-                    textTransform={'uppercase'}
-                    fontWeight={600}
-                    color={'white'}
-                    variant={'outline'}
-                    bg={'transparent'}
-                    borderRadius={'none'}
-                    href={'/packages'}
-                    padding="1.5rem"
-                    _hover={{
-                        bg: 'white',
-                        color: '#000'
-                    }}>
-                    Explore Our packages
-                    <Icon
-                        as={ArrowForwardIcon}
-                        transition={'all .25s ease-in-out'}
-                        w={4}
-                        h={4}
-                        ml={8}
-                    />
-                </Button>
+
 
             </Flex>
         </Stack>
@@ -204,4 +182,27 @@ const NAV_ITEMS = [
         label: 'Contact Us',
         href: '/contact',
     },
+];
+
+const MOBILE_NAV_ITEMS = [
+    {
+        label: 'Home',
+        href: '/',
+    },
+    {
+        label: 'About Us',
+        href: '/about',
+    },
+    {
+        label: 'Blog',
+        href: '/blog',
+    },
+    {
+        label: 'Contact Us',
+        href: '/contact',
+    },
+    {
+        label: 'Explore Packages',
+        href: '/packages'
+    }
 ];

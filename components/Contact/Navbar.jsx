@@ -127,10 +127,10 @@ const DesktopNav = () => {
 const MobileNav = () => {
     return (
         <Stack
-            bg={useColorModeValue('white', 'gray.800')}
+            bg={'#000'}
             p={4}
             display={{ md: 'none' }}>
-            {NAV_ITEMS.map((navItem) => (
+            {MOBILE_NAV_ITEMS.map((navItem) => (
                 <MobileNavItem key={navItem.label} {...navItem} />
             ))}
         </Stack>
@@ -153,7 +153,7 @@ const MobileNavItem = ({ label, children, href }) => {
                 }}>
                 <Text
                     fontWeight={600}
-                    color={useColorModeValue('gray.600', 'gray.200')}>
+                    color={useColorModeValue('gray.100', 'gray.200')}>
                     {label}
                 </Text>
                 <Button
@@ -204,4 +204,26 @@ const NAV_ITEMS = [
         label: 'Contact Us',
         href: '/contact',
     },
+];
+const MOBILE_NAV_ITEMS = [
+    {
+        label: 'Home',
+        href: '/',
+    },
+    {
+        label: 'About Us',
+        href: '/about',
+    },
+    {
+        label: 'Blog',
+        href: '/blog',
+    },
+    {
+        label: 'Contact Us',
+        href: '/contact',
+    },
+    {
+        label: 'Explore Packages',
+        href: '/packages'
+    }
 ];
