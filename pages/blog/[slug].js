@@ -2,42 +2,38 @@ import ReactMarkdown from "react-markdown"
 import Moment from "react-moment"
 import { fetchAPI } from "../api/blog"
 import NextImage from "../../components/Blog/Image"
-import { getStrapiMedia } from "../api/media"
-import { Box } from "@chakra-ui/react"
+import { getStrapiMedia } from "../../lib/media";
+import { Box, Heading, Image, Container, Center, Text, Stack } from "@chakra-ui/react"
+import Navbar from "../../components/Blog/Navbar"
+import remarkGfm from 'remark-gfm'
 
 const Article = ({ article }) => {
     const imageUrl = getStrapiMedia(article.attributes.image)
 
 
     return (
-        <Box>
-            <div
-                id="banner"
-                className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
-                data-src={imageUrl}
-                data-srcset={imageUrl}
-                data-uk-img
-            >
-                <h1>{article.attributes.title}</h1>
-            </div>
-            <div className="uk-section">
-                <div className="uk-container uk-container-small">
-                    <ReactMarkdown
-                        source={article.attributes.content}
-                        escapeHtml={false}
-                    />
-                    <hr className="uk-divider-small" />
-                    <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
-                        <div className="uk-width-expand">
-                            <p className="uk-text-meta uk-margin-remove-top">
-                                <Moment format="MMM Do YYYY">
-                                    {article.attributes.published_at}
-                                </Moment>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <Box bg={'#000'} color={'#fff'}>
+            <Navbar />
+            <Box >
+                <Image src={imageUrl} alt={'image'} width={'100%'} />
+                <Container maxW={{ md: '1000px' }}>
+                    <Center flexDirection={'column'} py={8}>
+                        <Heading as="h1" fontSize={'36px'}> {article.attributes.title}</Heading>
+                        <Text color={'#9D9D9D'} fontSize={'14px'}>
+                            <Moment format="MMM Do YYYY">
+                                {article.attributes.published_at}
+                            </Moment>
+                        </Text>
+                    </Center>
+                    <Stack py={8}>
+                        <ReactMarkdown
+                            children={article.attributes.content}
+                            remarkPlugins={[remarkGfm]}
+                        />
+                    </Stack>
+
+                </Container>
+            </Box>
         </Box>
     )
 }

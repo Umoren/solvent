@@ -2,11 +2,13 @@ import { Box } from "@chakra-ui/react"
 import React from "react"
 import Articles from "../components/Blog/Articles"
 import { fetchAPI } from "../lib/api"
+import Navbar from "../components/Blog/Navbar"
 
 const Blog = ({ articles }) => {
     return (
         <Box>
-            <Articles articles={articles} />
+            <Navbar />
+            <Articles articles={articles} padding={{ md: '5rem', base: '1rem' }} />
         </Box>
     )
 }
