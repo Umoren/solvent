@@ -7,11 +7,12 @@ import Newspaper from "../components/Homepage/Newspaper";
 import Niche from "../components/Homepage/Niche";
 import SocialMedia from "../components/Homepage/SocialMedia";
 import WhySolvent from "../components/Homepage/WhySolvent";
-import BlogSection from "../components/Blog/BlogSection";
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 import Head from 'next/head'
+import { fetchAPI } from "../lib/api"
+import Articles from "../components/Blog/Articles";
 
-export default function Home() {
+export default function Home({ articles }) {
   return (
     <div >
       <Head>
@@ -74,8 +75,23 @@ export default function Home() {
         </Box>
       </Link>
 
-      <BlogSection />
+      <Articles articles={articles} />
 
     </div>
   )
+}
+
+export async function getStaticProps() {
+  // Run API calls in parallel
+  const [articlesRes] = await Promise.all([
+    fetchAPI("/articles", { populate: "*" }),
+
+  ])
+
+  return {
+    props: {
+      articles: articlesRes.data.slice(0, 4),
+    },
+    revalidate: 1,
+  }
 }

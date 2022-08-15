@@ -43,7 +43,7 @@ export default function WhySolvent() {
                         borderRadius={'none'}
                         color={'#fff'}
                         padding={{ base: '1rem' }}
-                        _hover={'none'}
+                        _hover={{ background: '#15BE60' }}
 
                     >
                         <Text

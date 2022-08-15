@@ -6,7 +6,9 @@ import Value from "../components/About/Value";
 import BlogSection from "../components/Blog/BlogSection";
 import Navbar from "../components/About/Navbar";
 import Head from 'next/head'
-export default function About() {
+import Articles from "../components/Blog/Articles"
+import { fetchAPI } from "../lib/api"
+export default function About({ articles }) {
     return (
         <Box>
             <Head>
@@ -18,7 +20,21 @@ export default function About() {
             <Objectives />
             <Value />
             <Team />
-            <BlogSection />
+            <Articles articles={articles} />
         </Box>
     )
+}
+export async function getStaticProps() {
+    // Run API calls in parallel
+    const [articlesRes] = await Promise.all([
+        fetchAPI("/articles", { populate: "*" }),
+
+    ])
+
+    return {
+        props: {
+            articles: articlesRes.data.slice(0, 4),
+        },
+        revalidate: 1,
+    }
 }

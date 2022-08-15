@@ -1,19 +1,11 @@
-import Navbar from "../components/Contact/Navbar"
-import CoverArea from "../components/Contact/CoverArea"
 import { Box } from "@chakra-ui/react"
-import Head from 'next/head'
+import React from "react"
 import Articles from "../components/Blog/Articles"
 import { fetchAPI } from "../lib/api"
-const Contact = ({ articles }) => {
+
+const Blog = ({ articles }) => {
     return (
         <Box>
-            <Head>
-                <title>Contact Us</title>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            </Head>
-            <Navbar />
-            <CoverArea />
-
             <Articles articles={articles} />
         </Box>
     )
@@ -28,10 +20,10 @@ export async function getStaticProps() {
 
     return {
         props: {
-            articles: articlesRes.data.slice(0, 4),
+            articles: articlesRes.data,
         },
         revalidate: 1,
     }
 }
 
-export default Contact
+export default Blog

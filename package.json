@@ -18,8 +18,11 @@
     "@fontsource/syne": "^4.5.9",
     "framer-motion": "^6.5.1",
     "next": "12.2.3",
+    "qs": "^6.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "^8.0.3",
+    "react-moment": "^1.1.2",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
