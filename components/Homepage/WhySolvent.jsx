@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Text, Button, Icon } from "@chakra-ui/react";
+import { Box, Center, Heading, Text, Button, Icon, Link } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 
 export default function WhySolvent() {
@@ -33,31 +33,35 @@ export default function WhySolvent() {
                     We started from a glassy dining table, forming the best-of-the-best players in the marketing industry on a mission to help people
                     by solving their problems, with the vision to uncover hidden aptitudes within businesses and partnerships..
                 </Text>
-                <Button
-                    width={{ md: '284px' }}
-                    height={{ md: '58px' }}
-                    bgColor={'#15BE60'}
-                    variant={'solid'}
-                    borderRadius={'none'}
-                    color={'#fff'}
-                    padding={{ base: '1rem' }}
+                <Link href="/about"
+                    textDecoration="none">
+                    <Button
+                        width={{ md: '284px' }}
+                        height={{ md: '58px' }}
+                        bgColor={'#15BE60'}
+                        variant={'solid'}
+                        borderRadius={'none'}
+                        color={'#fff'}
+                        padding={{ base: '1rem' }}
+                        _hover={'none'}
 
-                >
-                    <Text
-                        textTransform={'uppercase'}
-                        textAlign={"center"}
-                        width={'100%'}
                     >
-                        About Us
-                    </Text>
-                    <Icon
-                        as={ArrowForwardIcon}
-                        transition={'all .25s ease-in-out'}
-                        w={4}
-                        h={4}
-                        ml={'auto'}
-                    />
-                </Button>
+                        <Text
+                            textTransform={'uppercase'}
+                            textAlign={"center"}
+                            width={'100%'}
+                        >
+                            About Us
+                        </Text>
+                        <Icon
+                            as={ArrowForwardIcon}
+                            transition={'all .25s ease-in-out'}
+                            w={4}
+                            h={4}
+                            ml={'auto'}
+                        />
+                    </Button>
+                </Link>
             </Center>
         </Box>
     )
