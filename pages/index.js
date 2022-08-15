@@ -9,10 +9,15 @@ import SocialMedia from "../components/Homepage/SocialMedia";
 import WhySolvent from "../components/Homepage/WhySolvent";
 import BlogSection from "../components/Blog/BlogSection";
 import { ArrowForwardIcon } from "@chakra-ui/icons"
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <div >
+      <Head>
+        <title>Solvent</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar />
       <CoverArea />
       <WhySolvent />

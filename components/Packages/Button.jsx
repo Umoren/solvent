@@ -5,7 +5,7 @@ export default function GenericButton({ bgColor, textColor, label }) {
     return (
         <Box
             color={'#fff'}
-            display={{ base: "flex", md: 'grid' }}
+            display={{ md: 'grid' }}
             justifyContent={{ base: 'center', }}
             placeContent={{ md: 'revert' }}
             border="none"
@@ -17,8 +17,8 @@ export default function GenericButton({ bgColor, textColor, label }) {
                 lineHeight='1.2'
                 transition='all 0.2s cubic-bezier(.08,.52,.52,1)'
                 border='1px'
-                padding={{ base: '1rem', md: '0' }}
-                marginTop={{ base: '3rem', md: '0' }}
+                py={{ base: '0.75rem', md: '0' }}
+                marginTop={{ base: '0', md: '0' }}
                 marginBottom={{ base: '2rem', md: '0' }}
                 px='8px'
                 fontSize='18px'

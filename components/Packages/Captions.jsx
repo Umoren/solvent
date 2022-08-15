@@ -3,16 +3,16 @@ import GenericButton from "./Button";
 
 const Captions = () => {
     return (
-        <Box color={'white'} height={'50vh'}>
+        <Box color={'white'} height={{ md: '50vh' }}>
 
-            <Box ml={28} py={8}>
-                <Grid templateColumns={{ md: 'repeat(2, 1fr)' }}>
+            <Box py={16} m={{ base: 'auto', md: '0 0 0 6rem' }} px={{ base: '0', md: '0' }}>
+                <Grid templateColumns={{ md: 'repeat(2, 1fr)' }} placeContent={{ base: 'center', md: 'auto' }}>
                     <GridItem display="flex" flexDirection={'column'} gap={4} m='auto'>
                         <Text fontSize={'16px'}> Monthly Package </Text>
                         <Heading
                             as="h3"
                             fontWeight="700"
-                            fontSize={{ md: '40px' }}
+                            fontSize={{ base: '30px', md: '40px' }}
                             fontFamily={'IBM Plex Sans'}
                             mb={16}
                         >
@@ -28,7 +28,7 @@ const Captions = () => {
                         <Heading
                             as="h3"
                             fontWeight="700"
-                            fontSize={{ md: '40px' }}
+                            fontSize={{ base: '30px', md: '40px' }}
                             fontFamily={'IBM Plex Sans'}
                             mb={16}
                         >

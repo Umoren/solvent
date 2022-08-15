@@ -51,7 +51,7 @@ export default function CoverArea() {
                 backgroundPosition={{ sm: 'center' }}
                 backgroundColor={'#000'}
                 border="none"
-                height={'70vh'}
+                height={{ base: '70vh' }}
             >
                 <Center flexDirection={'column'} alignItems={'center'}>
                     <Heading
@@ -99,6 +99,7 @@ export default function CoverArea() {
                                 lineHeight={{ md: '36px' }}
                                 width={{ md: '70ch' }}
                                 textAlign={'center'}
+                                mt={8}
                             >
                                 Vanguard, Daily Sun, The Nation, Daily Independence, Leadership, Guardian, Tribune, Daily Times, Punch & This Day
                             </Text>

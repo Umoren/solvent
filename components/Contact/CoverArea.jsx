@@ -4,7 +4,7 @@ export default function CoverArea() {
     return (
         <Box
             height={{ base: '70vh', md: '80vh' }}
-            px={{ base: 8, md: 24 }}
+            px={{ base: 16, md: 24 }}
             backgroundImage="url('assets/contact.png')"
             backgroundPosition={{ sm: 'center' }}
             border="none"
@@ -13,14 +13,14 @@ export default function CoverArea() {
             <Center flexDirection={'column'}>
                 <Heading
                     as="h1"
-                    fontSize={{ md: '36px' }}
+                    fontSize={{ base: '36px' }}
                     color={'#fff'}
                     pt={24}
                 > Contact us</Heading>
             </Center>
-            <Grid templateColumns={{ md: 'repeat(3, 1fr)' }} mt={20}>
+            <Grid templateColumns={{ md: 'repeat(3, 1fr)' }} mt={20} rowGap={{ base: 30 }}>
 
-                <GridItem m="auto">
+                <GridItem m={{ md: "auto" }}>
                     <Image src="/assets/sms-star.png" alt="sms-star" />
                     <Text fontFamily={'Syne'} fontSize={'22px'}> Email Address </Text>
 
@@ -29,7 +29,7 @@ export default function CoverArea() {
                     </Text>
                 </GridItem>
 
-                <GridItem m="auto">
+                <GridItem m={{ md: 'auto' }}>
                     <Image src="/assets/headphone.png" alt="sms-star" />
                     <Text fontFamily={'Syne'} fontSize={'22px'}> Contact Line </Text>
                     <Text mt={4}>

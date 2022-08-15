@@ -16,7 +16,7 @@ const InternationalPublications = () => {
                 </Text>
 
 
-                <Grid templateColumns={{ md: 'repeat(6, 1fr)' }} gridGap={8} mt={8}>
+                <Grid templateColumns={{ base: 'repeat(3, 1fr)', md: 'repeat(6, 1fr)' }} gridGap={8} mt={8}>
                     <GridItem>
                         <Image src="/assets/forbesReal.png" alt="forbes" />
                     </GridItem>
