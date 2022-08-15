@@ -8,6 +8,7 @@ import { Box, Heading, Image, Container, Center, Text, Stack } from "@chakra-ui/
 import Navbar from "../../components/Blog/Navbar"
 import remarkGfm from 'remark-gfm'
 
+
 const Article = ({ article }) => {
     const imageUrl = getStrapiMedia(article.attributes.image)
 
