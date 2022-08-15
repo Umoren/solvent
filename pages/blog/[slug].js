@@ -1,7 +1,7 @@
 /* eslint react/prop-types: 0 */
 import ReactMarkdown from "react-markdown"
 import Moment from "react-moment"
-import { fetchAPI } from "../api/blog"
+import { fetchAPI } from "../../lib/api";
 import NextImage from "../../components/Blog/Image"
 import { getStrapiMedia } from "../../lib/media";
 import { Box, Heading, Image, Container, Center, Text, Stack } from "@chakra-ui/react"
