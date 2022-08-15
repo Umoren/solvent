@@ -28,9 +28,10 @@ const Article = ({ article }) => {
                     </Center>
                     <Stack py={8}>
                         <ReactMarkdown
-                            children={article.attributes.content}
                             remarkPlugins={[remarkGfm]}
-                        />
+                        >
+                            {article.attributes.content}
+                        </ReactMarkdown>
                     </Stack>
 
                 </Container>
