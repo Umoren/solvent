@@ -22,7 +22,7 @@ export default function KnowledgePanel() {
                 >
                     <Heading
                         as="h5"
-                        fontSize={{ base: '36px' }}
+                        fontSize={{ base: '24px', md: '36px' }}
                         lineHeight={'32.4px'}
                         fontWeight={'500'}
                         py={4}

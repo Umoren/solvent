@@ -13,7 +13,7 @@ export default function Newspaper() {
             border="none"
         >
             <Grid templateColumns={{ md: 'repeat(2, 1fr)' }} gap={6}>
-                <GridItem >
+                <GridItem order={{ base: 2 }}>
                     <Image
                         src="/assets/media.png"
                         alt="Newspaper"
@@ -31,7 +31,7 @@ export default function Newspaper() {
                 >
                     <Heading
                         as="h5"
-                        fontSize={{ base: '36px' }}
+                        fontSize={{ base: '24px', md: '36px' }}
                         lineHeight={'32.4px'}
                         fontWeight={'500'}
                         py={4}

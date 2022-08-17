@@ -1,7 +1,7 @@
 import { Box, Icon } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 
-export default function GenericButton({ bgColor, textColor, label }) {
+export default function GenericButton({ bgColor, textColor, label, mt }) {
     return (
         <Box
             color={'#fff'}
@@ -9,6 +9,7 @@ export default function GenericButton({ bgColor, textColor, label }) {
             justifyContent={{ base: 'center', }}
             placeContent={{ md: 'revert' }}
             border="none"
+            mt={mt}
         >
             <Box
                 as='button'

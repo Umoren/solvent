@@ -3,7 +3,7 @@ import { Box, Center, Grid, Heading, Text, GridItem, Link, Image, Flex } from "@
 export default function CoverArea() {
     return (
         <Box
-            height={{ base: '70vh', md: '80vh' }}
+            height={{ base: '80vh', md: '80vh' }}
             px={{ base: 16, md: 24 }}
             backgroundImage="url('assets/contact.png')"
             backgroundPosition={{ sm: 'center' }}
@@ -18,7 +18,7 @@ export default function CoverArea() {
                     pt={24}
                 > Contact us</Heading>
             </Center>
-            <Grid templateColumns={{ md: 'repeat(3, 1fr)' }} mt={20} rowGap={{ base: 30 }}>
+            <Grid templateColumns={{ md: 'repeat(3, 1fr)' }} mt={8} rowGap={{ base: 30 }}>
 
                 <GridItem m={{ md: "auto" }}>
                     <Image src="/assets/sms-star.png" alt="sms-star" />

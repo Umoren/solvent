@@ -1,4 +1,5 @@
 import { Box, Text, Center, Grid, Image, GridItem } from "@chakra-ui/react"
+import GenericButton from "./Button"
 
 const InternationalPublications = () => {
     return (
@@ -79,6 +80,8 @@ const InternationalPublications = () => {
                     </GridItem>
 
                 </Grid>
+
+                <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} mt={8} />
             </Center>
 
         </Box>

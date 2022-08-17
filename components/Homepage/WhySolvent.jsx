@@ -12,7 +12,7 @@ export default function WhySolvent() {
             <Center flexDirection={'column'} transition="all .25s ease" >
                 <Heading
                     as={'h1'}
-                    fontSize={{ base: '36px' }}
+                    fontSize={{ base: '24px', md: '36px' }}
                     lineHeight={'43px'}
                     color={'#fff'}
                     mb={4}

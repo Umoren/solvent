@@ -18,7 +18,7 @@ export default function Niche() {
                     <Heading
                         as="h5"
                         fontWeight={'500'}
-                        fontSize={{ base: '36px' }}
+                        fontSize={{ base: '24px', md: '36px' }}
                         lineHeight={'43.2px'}
                         width={{ md: '20ch' }}
                         py={4}

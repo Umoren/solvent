@@ -7,6 +7,7 @@ import SocialMedia from "./SocialMedia";
 import styles from './select.module.css';
 import Captions from './Captions';
 import GenericButton from "./Button";
+import CustomSelect from "../CustomSelect";
 
 export default function CoverArea() {
     const [selectPackage, setSelectPackage] = useState("newspaperPublication")
@@ -19,8 +20,10 @@ export default function CoverArea() {
     const [knowledgePanel, setKnowledgePanel] = useState(false)
     const [mediaCleanup, setMediaCleanup] = useState(false)
 
-    const handleOnChange = (e) => {
-        setSelectPackage(e.target.value)
+
+
+    const find = (e) => {
+        setSelectPackage(e.value)
     }
     const makeOptionsCapitalLetter = (str) => {
         return str.toUpperCase();
@@ -32,7 +35,11 @@ export default function CoverArea() {
             : (makeOptionsCapitalLetter(selectPackage));
         return result;
     }
+    if (typeof window !== "undefined") {
 
+        localStorage.getItem('valueItems')
+
+    }
     useEffect(() => {
         selectPackage === "newspaperPublication" ? setNewspaperPublication(true) : setNewspaperPublication(false);
         selectPackage === "newspaperBackdated" ? setNewspaperBackdated(true) : setNewspaperBackdated(false);
@@ -66,16 +73,8 @@ export default function CoverArea() {
                         Our Packages
                     </Heading>
 
-                    <select className={styles.select} placeholder='Select option' value={selectPackage} onChange={handleOnChange}>
-                        <option value="newspaperPublication"> Newspaper Publications</option>
-                        <option value="newspaperBackdated"> Newspaper Publication (Backdated)</option>
-                        <option value="international"> International Publications </option>
-                        <option value="socialMedia"> Social Media & Blogs </option>
-                        <option value="captions"> CAPTIONS GENERATION & COPYWRITE</option>
-                        <option value="wikipedia"> Wikipedia </option>
-                        <option value="knowledgePanel"> Google Knowledge Panel </option>
-                        <option value="mediaCleanup"> Media Cleanup </option>
-                    </select>
+
+                    <CustomSelect className={styles.select} placeholder={'Select option'} onChange={find} />
                 </Center>
 
 
