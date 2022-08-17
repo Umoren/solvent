@@ -22,3 +22,7 @@ select.select {
       width: 100%
     }
   }
+
+  select.select *{
+    padding: 3rem;
+   }
