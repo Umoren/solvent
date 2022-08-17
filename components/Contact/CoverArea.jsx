@@ -55,6 +55,9 @@ export default function CoverArea() {
                             <Link href="https://instagram.com/solventdigital?igshid=YmMyMTA2M2Y=" m="auto">
                                 <Image src="/assets/ig.svg" alt="instagram" />
                             </Link>
+                            <Link href="https://www.tiktok.com/@solventdigital?_t=8UuUNpHecLd&_r=1" m="auto">
+                                <Image src="/assets/tiktok.svg" alt="tiktok" />
+                            </Link>
                         </Flex>
                     </Box>
                 </GridItem>
