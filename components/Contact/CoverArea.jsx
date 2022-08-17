@@ -6,9 +6,11 @@ export default function CoverArea() {
             height={{ base: '80vh', md: '80vh' }}
             px={{ base: 16, md: 24 }}
             backgroundImage="url('assets/contact.png')"
-            backgroundPosition={{ sm: 'center' }}
+            backgroundPosition={{ sm: 'center', md: 'revert' }}
             border="none"
             color={'#fff'}
+            backgroundSize={{ xl: 'cover' }}
+            backgroundRepeat={{ xl: 'no-repeat' }}
         >
             <Center flexDirection={'column'}>
                 <Heading

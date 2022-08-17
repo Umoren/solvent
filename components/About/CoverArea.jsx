@@ -9,9 +9,11 @@ export default function CoverArea() {
             display={'flex'}
             flexDirection={'column'}
             justifyContent={'center'}
-            backgroundPosition={{ sm: 'center' }}
+            backgroundPosition={{ sm: 'center', md: 'revert' }}
             backgroundColor={'#000'}
             border="none"
+            backgroundSize={{ xl: 'cover' }}
+            backgroundRepeat={{ xl: 'no-repeat' }}
         >
             <Center flexDirection={'column'} alignItems={'center'}>
                 <Heading

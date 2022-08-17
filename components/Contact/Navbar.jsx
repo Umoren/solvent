@@ -29,7 +29,10 @@ export default function WithSubnavigation() {
                 minH={'60px'}
                 py={{ base: 8 }}
                 px={{ base: 8 }}
-                align={'center'}>
+                align={'center'}
+                backgroundPosition={{ sm: 'center', md: 'revert', }}
+                backgroundSize={{ xl: 'cover' }}
+                backgroundRepeat={{ xl: 'no-repeat' }}>
                 <Flex
                     flex={{ base: 1, md: 'auto' }}
                     ml={{ base: -2 }}

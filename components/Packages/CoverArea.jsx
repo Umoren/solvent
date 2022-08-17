@@ -48,10 +48,12 @@ export default function CoverArea() {
             <Box
                 px={{ base: 8, md: 24 }}
                 backgroundImage="url('assets/newspaper-pub.png')"
-                backgroundPosition={{ sm: 'center' }}
+                backgroundPosition={{ sm: 'center', md: 'revert' }}
                 backgroundColor={'#000'}
                 border="none"
                 height={'70vh'}
+                backgroundSize={{ xl: 'cover' }}
+                backgroundRepeat={{ xl: 'no-repeat' }}
             >
                 <Center flexDirection={'column'} alignItems={'center'}>
                     <Heading

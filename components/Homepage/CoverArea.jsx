@@ -10,7 +10,9 @@ export default function CoverArea() {
             display={'flex'}
             flexDirection={'column'}
             justifyContent={'center'}
-            backgroundPosition={{ sm: 'center' }}
+            backgroundPosition={{ sm: 'center', md: 'revert', }}
+            backgroundSize={{ xl: 'cover' }}
+            backgroundRepeat={{ xl: 'no-repeat' }}
             border="none"
         >
             <Heading
