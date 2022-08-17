@@ -3,17 +3,23 @@ import { Box, Heading, Text, Center } from "@chakra-ui/react";
 export default function CoverArea() {
     return (
         <Box
-            height={{ base: '100vh', md: '80vh' }}
             px={{ base: 8, md: 24 }}
             backgroundImage="url('assets/about.png')"
             display={'flex'}
+            mt={{ base: '10rem', md: '0rem' }}
             flexDirection={'column'}
             justifyContent={'center'}
+            textAlign={'justify'}
             backgroundPosition={{ sm: 'center', md: 'revert' }}
             backgroundColor={'#000'}
             border="none"
             backgroundSize={{ xl: 'cover' }}
             backgroundRepeat={{ xl: 'no-repeat' }}
+            position={'relative'}
+            width={'100%'}
+            bottom={'7.5rem'}
+            zIndex={'0'}
+            height={'100vh'}
         >
             <Center flexDirection={'column'} alignItems={'center'}>
                 <Heading
@@ -31,7 +37,7 @@ export default function CoverArea() {
                     color={'#D0D0D0'}
                     lineHeight={'30px'}
                     fontWeight={'400'}
-                    textAlign={'center'}
+                    textAlign={{ base: 'justify', md: 'center' }}
                     mt={8}
                     width={{ md: '78ch', base: '100%' }}
                 >

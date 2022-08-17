@@ -51,9 +51,13 @@ export default function CoverArea() {
                 backgroundPosition={{ sm: 'center', md: 'revert' }}
                 backgroundColor={'#000'}
                 border="none"
-                height={'70vh'}
                 backgroundSize={{ xl: 'cover' }}
                 backgroundRepeat={{ xl: 'no-repeat' }}
+                position={'relative'}
+                width={'100%'}
+                bottom={'7.5rem'}
+                zIndex={'0'}
+                height={'100vh'}
             >
                 <Center flexDirection={'column'} alignItems={'center'}>
                     <Heading
@@ -63,7 +67,7 @@ export default function CoverArea() {
                         lineHeight={{ md: '43.2px' }}
                         width={{ base: '100%' }}
                         textAlign={'center'}
-                        mt={10}
+                        mt={{ base: '7rem', md: '10rem' }}
                     >
                         Our Packages
                     </Heading>
@@ -88,7 +92,7 @@ export default function CoverArea() {
                                 fontWeight={400}
                                 fontSize={{ md: '16px' }}
                                 lineHeight={{ md: '36px' }}
-                                textAlign={'center'}
+                                textAlign={{ base: 'justify', md: 'center' }}
                                 width={{ md: '77ch' }}
                                 mt={4}
                             >
@@ -100,7 +104,7 @@ export default function CoverArea() {
                                 fontSize={{ md: '16px' }}
                                 lineHeight={{ md: '36px' }}
                                 width={{ md: '70ch' }}
-                                textAlign={'center'}
+                                textAlign={{ base: 'justify', md: 'center' }}
                             >
                                 Vanguard, Daily Sun, The Nation, Daily Independence, Leadership, Guardian, Tribune, Daily Times, Punch & This Day
                             </Text>

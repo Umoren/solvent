@@ -26,10 +26,11 @@ export default function WithSubnavigation() {
                 bgColor={'transparent'}
                 position={'relative'}
                 zIndex={2}
+                top={{ base: '-1rem' }}
                 color={useColorModeValue('gray.600', 'white')}
                 minH={'60px'}
                 py={{ base: 8 }}
-                px={{ base: 8 }}
+                px={{ base: 8, md: 24 }}
                 align={'center'}
                 backgroundPosition={{ sm: 'center', md: 'revert', }}
                 backgroundSize={{ xl: 'cover' }}
@@ -133,6 +134,7 @@ const MobileNav = () => {
     return (
         <Stack
             bg={'#000'}
+            height={'75vh'}
             p={4}
             color={'white'}
             display={{ md: 'none' }}>

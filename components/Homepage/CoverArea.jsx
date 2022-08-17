@@ -4,7 +4,6 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 export default function CoverArea() {
     return (
         <Box
-            height={{ base: '70vh', md: '70vh' }}
             px={{ base: 8, md: 24 }}
             backgroundImage="url('assets/coverArea.png')"
             display={'flex'}
@@ -14,6 +13,11 @@ export default function CoverArea() {
             backgroundSize={{ xl: 'cover' }}
             backgroundRepeat={{ xl: 'no-repeat' }}
             border="none"
+            position={'relative'}
+            width={'100%'}
+            bottom={'7.5rem'}
+            zIndex={'0'}
+            height={'100vh'}
         >
             <Heading
                 color={'#fff'}

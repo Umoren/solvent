@@ -2,7 +2,6 @@ import { Box, Icon, Link } from "@chakra-ui/react";
 import CoverArea from "../components/Homepage/CoverArea";
 import KnowledgePanel from "../components/Homepage/KnowledgePanel";
 import MediaCleanup from "../components/Homepage/MediaCleanup";
-import Navbar from "../components/Homepage/Navbar";
 import Newspaper from "../components/Homepage/Newspaper";
 import Niche from "../components/Homepage/Niche";
 import SocialMedia from "../components/Homepage/SocialMedia";
@@ -19,7 +18,6 @@ export default function Home({ articles }) {
         <title>Solvent</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Navbar />
       <CoverArea />
       <WhySolvent />
       <Niche />

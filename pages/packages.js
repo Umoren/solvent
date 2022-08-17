@@ -1,4 +1,3 @@
-import Navbar from "../components/Packages/Navbar"
 import CoverArea from "../components/Packages/CoverArea"
 import Articles from "../components/Blog/Articles"
 import { fetchAPI } from "../lib/api"
@@ -6,7 +5,6 @@ import { fetchAPI } from "../lib/api"
 const Packages = ({ articles }) => {
     return (
         <>
-            <Navbar />
             <CoverArea />
             <Articles articles={articles} />
         </>

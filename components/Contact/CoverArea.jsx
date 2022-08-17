@@ -3,14 +3,19 @@ import { Box, Center, Grid, Heading, Text, GridItem, Link, Image, Flex } from "@
 export default function CoverArea() {
     return (
         <Box
-            height={{ base: '80vh', md: '80vh' }}
             px={{ base: 16, md: 24 }}
+            pt={{ md: 28 }}
             backgroundImage="url('assets/contact.png')"
             backgroundPosition={{ sm: 'center', md: 'revert' }}
             border="none"
             color={'#fff'}
             backgroundSize={{ xl: 'cover' }}
             backgroundRepeat={{ xl: 'no-repeat' }}
+            position={'relative'}
+            width={'100%'}
+            bottom={'7.5rem'}
+            zIndex={'0'}
+            height={'100vh'}
         >
             <Center flexDirection={'column'}>
                 <Heading
