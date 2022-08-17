@@ -41,12 +41,20 @@ export default function CoverArea() {
                     <Image src="/assets/sms-star.png" alt="sms-star" />
                     <Text fontFamily={'Syne'} fontSize={'22px'}> Social Media </Text>
                     <Box mt={4}>
-                        <Flex gap={4}>
+                        <Flex alignCenter={'center'}>
                             <Text color={'#15BE60'}> @SolventDigital </Text>
-                            <Image src="/assets/tw.svg" alt="twitter" />
-                            <Image src="/assets/fb.svg" alt="facebook" />
-                            <Image src="/assets/msg.svg" alt="messenger" />
-                            <Image src="/assets/ig.svg" alt="instagram" />
+                            <Link href="https://twitter.com/solventdigital?s=21&t=8-q7WBo-_h4cyH_0UI5NoQ" m="auto">
+                                <Image src="/assets/tw.svg" alt="twitter" />
+                            </Link>
+                            <Link href="" m="auto">
+                                <Image src="/assets/fb.svg" alt="facebook" />
+                            </Link>
+                            <Link m="auto">
+                                <Image src="/assets/msg.svg" alt="messenger" />
+                            </Link>
+                            <Link href="https://instagram.com/solventdigital?igshid=YmMyMTA2M2Y=" m="auto">
+                                <Image src="/assets/ig.svg" alt="instagram" />
+                            </Link>
                         </Flex>
                     </Box>
                 </GridItem>
