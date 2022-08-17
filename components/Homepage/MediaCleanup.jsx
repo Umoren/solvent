@@ -13,7 +13,7 @@ export default function Newspaper() {
             border="none"
         >
             <Grid templateColumns={{ md: 'repeat(2, 1fr)' }} gap={6}>
-                <GridItem order={{ base: 2 }}>
+                <GridItem order={{ base: 2, md: 0 }}>
                     <Image
                         src="/assets/media.png"
                         alt="Newspaper"
