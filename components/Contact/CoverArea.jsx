@@ -46,7 +46,7 @@ export default function CoverArea() {
                             <Link href="https://twitter.com/solventdigital?s=21&t=8-q7WBo-_h4cyH_0UI5NoQ" m="auto">
                                 <Image src="/assets/tw.svg" alt="twitter" />
                             </Link>
-                            <Link href="" m="auto">
+                            <Link href="https://www.facebook.com/Solvent-Digital-106635372163615/" m="auto">
                                 <Image src="/assets/fb.svg" alt="facebook" />
                             </Link>
                             <Link m="auto">
