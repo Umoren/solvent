@@ -49,7 +49,7 @@ const NewspaperPublications = () => {
                             fontFamily={'IBM Plex Sans'}
                             mt={4}
                         >
-                            ₦30,000
+                            ₦135,000
                         </Heading>
                         <Box display="flex" gap={2} mt={4}>
                             <Image
