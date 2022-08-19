@@ -5,10 +5,9 @@ export default function WhySolvent() {
     return (
         <Box
             bgColor={'#000'}
-            py={{ md: '4rem' }}
             px={{ base: '2rem' }}
             position={'relative'}
-            top={{ base: '-13rem', md: '0' }}
+            top={{ base: '-13rem', md: '-4rem' }}
             border="none"
         >
             <Center flexDirection={'column'} transition="all .25s ease" >

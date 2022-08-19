@@ -12,6 +12,7 @@ export default function CoverArea() {
             backgroundPosition={{ sm: 'center', md: 'revert', }}
             backgroundSize={{ xl: 'cover' }}
             backgroundRepeat={{ xl: 'no-repeat' }}
+            backgroundAttachment={'fixed'}
             border="none"
             position={'relative'}
             width={'100%'}
