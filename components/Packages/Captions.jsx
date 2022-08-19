@@ -5,7 +5,7 @@ const Captions = () => {
     return (
         <Box color={'white'} height={{ md: '50vh' }}>
 
-            <Box py={16} m={{ base: 'auto', md: '0 0 0 6rem' }} px={{ base: '0', md: '0' }} mt={{ md: '-10rem' }} mb={{ md: '5rem' }}>
+            <Box pb={{ base: 16 }} pt={{ base: 0, md: 16 }} m={{ base: 'auto', md: '0 0 0 6rem' }} px={{ base: '0', md: '0' }} mt={{ md: '-10rem' }} mb={{ md: '5rem' }}>
                 <Grid templateColumns={{ md: 'repeat(2, 1fr)' }} placeContent={{ base: 'center', md: 'auto' }}>
                     <GridItem display="flex" flexDirection={'column'} gap={4} m='auto'>
                         <Text fontSize={'16px'}> Monthly Package </Text>

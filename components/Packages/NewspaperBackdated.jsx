@@ -6,7 +6,7 @@ const NewspaperBackdated = () => {
         <Box color={'white'} height={{ md: '50vh' }} mt={{ md: '-10rem' }} mb={{ md: '5rem' }}>
 
 
-            <Box py={16} m={{ base: 'auto', md: '0 0 0 6rem' }} px={{ base: '0', md: '0' }}>
+            <Box pb={{ base: 16 }} pt={{ base: 0, md: 16 }} m={{ base: 'auto', md: '0 0 0 6rem' }} px={{ base: '0', md: '0' }}>
                 <Grid templateColumns={{ md: 'repeat(3, 1fr)' }} placeContent={{ base: 'center', md: 'auto' }}>
                     <GridItem display="flex" flexDirection={'column'} gap={4}>
                         <Text fontSize={'16px'}> Basic Package </Text>

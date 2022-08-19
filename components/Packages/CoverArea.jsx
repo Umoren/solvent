@@ -57,7 +57,7 @@ export default function CoverArea() {
                 width={'100%'}
                 bottom={'7.5rem'}
                 zIndex={'0'}
-                height={'100vh'}
+                height={{ base: '75vh', md: '100vh' }}
             >
                 <Center flexDirection={'column'} alignItems={'center'}>
                     <Heading
