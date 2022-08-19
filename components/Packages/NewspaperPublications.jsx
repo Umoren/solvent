@@ -57,7 +57,7 @@ const NewspaperPublications = () => {
                                 alt="radio"
                             />
                             <Text>
-                                1 publication
+                                5 publications
                             </Text>
                         </Box>
 
