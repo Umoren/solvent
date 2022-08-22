@@ -3,7 +3,7 @@ import GenericButton from "./Button";
 
 const NewspaperPublications = () => {
     return (
-        <Box color={'white'} height={{ md: '50vh' }} mt={{ md: '-10rem' }} mb={{ md: '5rem' }} position={'relative'} top={{ md: '-3rem' }}>
+        <Box color={'white'} height={{}} mt={{ md: '-10rem' }} mb={{ md: '5rem' }} position={'relative'} top={{ md: '-3rem' }}>
 
 
             <Box pb={{ base: 16 }} pt={{ base: 0, md: 0 }} m={{ base: 'auto', md: '0 0 0 6rem' }} px={{ base: '0', md: '0' }} mt={{ md: '-10rem' }} mb={{ md: '5rem' }}>
