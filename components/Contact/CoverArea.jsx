@@ -6,11 +6,11 @@ export default function CoverArea() {
             px={{ base: 16, md: 24 }}
             pt={{ md: 28 }}
             backgroundImage="url('assets/contact.png')"
-            backgroundPosition={{ sm: 'center', md: 'revert' }}
+            backgroundPosition={{ base: '100% 10%', md: 'revert' }}
             border="none"
             color={'#fff'}
             backgroundSize={{ xl: 'cover' }}
-            backgroundRepeat={{ xl: 'no-repeat' }}
+            backgroundRepeat={{ base: 'no-repeat', xl: 'no-repeat' }}
             position={'relative'}
             width={'100%'}
             bottom={'7.5rem'}

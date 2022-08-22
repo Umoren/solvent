@@ -6,11 +6,12 @@ export default function CoverArea() {
             px={{ base: 8, md: 24 }}
             backgroundImage="url('assets/about.png')"
             display={'flex'}
-            mt={{ base: '10rem', md: '0rem' }}
+            mt={{ base: '1rem', md: '0rem' }}
+            pt={{ base: '3rem' }}
             flexDirection={'column'}
             justifyContent={'center'}
             textAlign={'justify'}
-            backgroundPosition={{ sm: 'center', md: 'revert' }}
+            backgroundPosition={{ md: 'revert' }}
             backgroundColor={'#000'}
             border="none"
             backgroundSize={{ xl: 'cover' }}
@@ -37,8 +38,9 @@ export default function CoverArea() {
                     color={'#D0D0D0'}
                     lineHeight={'30px'}
                     fontWeight={'400'}
+                    fontSize={'14px'}
                     textAlign={{ base: 'justify', md: 'center' }}
-                    mt={8}
+                    mt={2}
                     width={{ md: '78ch', base: '100%' }}
                 >
                     Over the years, the brand has succeeded in providing clients across the world with topnotch services. These services are however utilized to propagate and provide a framework through which people are viewed and understood positively. The overarching goal of the brand is centered on image and capacity building, which is illustrated through the multifaceted functions of the brand. Our utmost value is to create a reliable management style which thrives in a trusting environment. However, we deliver
