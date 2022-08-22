@@ -5,7 +5,6 @@ import { fetchAPI } from "../../lib/api";
 import NextImage from "../../components/Blog/Image"
 import { getStrapiMedia } from "../../lib/media";
 import { Box, Heading, Image, Container, Center, Text, Stack } from "@chakra-ui/react"
-import Navbar from "../../components/Blog/Navbar"
 import remarkGfm from 'remark-gfm'
 
 
@@ -15,7 +14,6 @@ const Article = ({ article }) => {
 
     return (
         <Box bg={'#000'} color={'#fff'}>
-            <Navbar />
             <Box >
                 <Image src={imageUrl} alt={'image'} width={'100%'} />
                 <Container maxW={{ md: '1000px' }}>
