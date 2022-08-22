@@ -9,7 +9,7 @@ import remarkGfm from 'remark-gfm'
 
 
 const Article = ({ article }) => {
-    const imageUrl = getStrapiMedia(article.attributes.image)
+    const imageUrl = getStrapiMedia(article?.attributes?.image)
 
 
     return (
@@ -18,10 +18,10 @@ const Article = ({ article }) => {
                 <Image src={imageUrl} alt={'image'} width={'100%'} />
                 <Container maxW={{ md: '1000px' }}>
                     <Center flexDirection={'column'} py={8}>
-                        <Heading as="h1" fontSize={'36px'}> {article.attributes.title}</Heading>
+                        <Heading as="h1" fontSize={'36px'}> {article?.attributes?.title}</Heading>
                         <Text color={'#9D9D9D'} fontSize={'14px'}>
                             <Moment format="MMM Do YYYY">
-                                {article.attributes.published_at}
+                                {article?.attributes?.published_at}
                             </Moment>
                         </Text>
                     </Center>
@@ -29,7 +29,7 @@ const Article = ({ article }) => {
                         <ReactMarkdown
                             remarkPlugins={[remarkGfm]}
                         >
-                            {article.attributes.content}
+                            {article?.attributes?.content}
                         </ReactMarkdown>
                     </Stack>
 

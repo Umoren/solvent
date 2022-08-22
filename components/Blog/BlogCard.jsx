@@ -32,22 +32,22 @@ export default function BlogCard({ article }) {
                 mb={6}
                 pos={'relative'}
             >
-                <NextImage image={article.attributes.image} />
+                <NextImage image={article?.attributes?.image} />
             </Box>
             <Stack>
                 <Heading
                     color={'#fff'}
                     fontSize={'2xl'}
                     fontFamily={'body'}>
-                    {article.attributes.title}
+                    {article?.attributes?.title}
                 </Heading>
                 <Text color={'#9D9D9D'} fontSize={'14px'}>
                     <Moment format="MMM Do YYYY">
-                        {article.attributes.published_at}
+                        {article?.attributes?.published_at}
                     </Moment>
                 </Text>
                 <Text color={'#fff'}>
-                    {article.attributes.description.slice(0, 100)}
+                    {article?.attributes?.description?.slice(0, 100)}
                 </Text>
             </Stack>
 
