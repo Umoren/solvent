@@ -7,15 +7,11 @@ import "@fontsource/syne"
 import "@fontsource/fira-sans"
 import "@fontsource/ibm-plex-sans"
 import Transition from '../components/Transition'
-import Head from 'next/head'
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </Head>
       <Layout>
         <Transition>
           <Component {...pageProps} />
