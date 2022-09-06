@@ -31,9 +31,9 @@ export default function Team() {
                 </Text>
 
                 <Box>
-                    <Grid templateColumns={{ md: 'repeat(4, 1fr)' }} gap={24} my={12}>
+                    <Grid templateColumns={{ md: 'repeat(3, 1fr)' }} gap={24} my={12}>
                         <GridItem>
-                            <Image src={'/assets/sodiq.png'} alt="team member" />
+                            <Image src={'/assets/team1.jpeg'} alt="team member" objectFit={'cover'} borderRadius={'100%'} width={'180px'} height={'180px'} />
                             <Heading
                                 as="h5"
                                 fontSize={{ md: '22px' }}
@@ -41,7 +41,7 @@ export default function Team() {
                                 textAlign={'center'}
                                 my={'.75rem'}
                             >
-                                Sadiq Akinola
+                                Obi Unique Kings
                             </Heading>
                             <Text
                                 fontWeight={'300'}
@@ -53,7 +53,7 @@ export default function Team() {
                             </Text>
                         </GridItem>
                         <GridItem>
-                            <Image src={'/assets/farouk.png'} alt="team member" />
+                            <Image src={'/assets/team2.jpeg'} alt="team member" borderRadius={'100%'} width={'180px'} height={'180px'} objectFit={'cover'} />
                             <Heading
                                 as="h5"
                                 fontSize={{ md: '22px' }}
@@ -61,7 +61,7 @@ export default function Team() {
                                 textAlign={'center'}
                                 my={'.75rem'}
                             >
-                                Farouk Ogunleye
+                                Adeolu Ogunmilade
                             </Heading>
                             <Text
                                 fontWeight={'300'}
@@ -69,11 +69,11 @@ export default function Team() {
                                 textAlign={'center'}
                                 opacity={'.8'}
                             >
-                                Founder/CEO
+                                Founder/COO
                             </Text>
                         </GridItem>
                         <GridItem>
-                            <Image src={'/assets/benita.png'} alt="team member" />
+                            <Image src={'/assets/team3.jpeg'} objectFit={'cover'} alt="team member" borderRadius={'100%'} width={'180px'} height={'180px'} />
                             <Heading
                                 as="h5"
                                 fontSize={{ md: '22px' }}
@@ -81,7 +81,7 @@ export default function Team() {
                                 textAlign={'center'}
                                 my={'.75rem'}
                             >
-                                Benita Ubah
+                                JohnAkachi Prince
                             </Heading>
                             <Text
                                 fontWeight={'300'}
@@ -89,29 +89,10 @@ export default function Team() {
                                 textAlign={'center'}
                                 opacity={'.8'}
                             >
-                                Founder/CEO
+                                Brand Manager
                             </Text>
                         </GridItem>
-                        <GridItem>
-                            <Image src={'/assets/daniels.png'} alt="team member" />
-                            <Heading
-                                as="h5"
-                                fontSize={{ md: '22px' }}
-                                fontWeight={'700'}
-                                textAlign={'center'}
-                                my={'.75rem'}
-                            >
-                                Daniels Olakunle
-                            </Heading>
-                            <Text
-                                fontWeight={'300'}
-                                fontSize={'16px'}
-                                textAlign={'center'}
-                                opacity={'.8'}
-                            >
-                                Founder/CEO
-                            </Text>
-                        </GridItem>
+
 
                     </Grid>
                 </Box>
