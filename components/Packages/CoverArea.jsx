@@ -192,7 +192,7 @@ export default function CoverArea() {
                                 details and achievements to a Wikipedia biography page.
                             </Text>
 
-                            <Link href="/contact">
+                            <Link href="https://forms.gle/ALgs5YwDMW3ZiYZT6">
                                 <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} mt={8} />
                             </Link>
                         </Center>
@@ -214,7 +214,7 @@ export default function CoverArea() {
                                 frame work of personal details and organization statuses.
                             </Text>
 
-                            <Link href="/contact">
+                            <Link href="https://forms.gle/ALgs5YwDMW3ZiYZT6">
                                 <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} mt={8} />
                             </Link>
                         </Center>
@@ -237,7 +237,7 @@ export default function CoverArea() {
                                 to prevent further spread and curb impending damages.
                             </Text>
 
-                            <Link href="/contact">
+                            <Link href="https://forms.gle/ALgs5YwDMW3ZiYZT6">
                                 <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} mt={8} />
                             </Link>
                         </Center>
