@@ -1,4 +1,4 @@
-import { Box, Center, Grid, GridItem, Heading, Image, Text, Badge } from "@chakra-ui/react"
+import { Box, Center, Grid, GridItem, Heading, Image, Text, Badge, Link } from "@chakra-ui/react"
 import GenericButton from "./Button";
 
 const Captions = () => {
@@ -19,8 +19,9 @@ const Captions = () => {
                             ₦20,000
                             <span style={{ fontSize: '16px' }}> per month</span>
                         </Heading>
-
-                        <GenericButton textColor={'#15BE60'} />
+                        <Link href="https://forms.gle/cauaSWn8yqxSu5Af6">
+                            <GenericButton textColor={'#15BE60'} />
+                        </Link>
                     </GridItem>
 
                     <GridItem display="flex" flexDirection={'column'} gap={4}>
@@ -36,7 +37,9 @@ const Captions = () => {
                             <span style={{ fontSize: '16px' }}> per year</span>
                         </Heading>
 
-                        <GenericButton textColor={'#15BE60'} />
+                        <Link href="https://forms.gle/cauaSWn8yqxSu5Af6">
+                            <GenericButton textColor={'#15BE60'} />
+                        </Link>
                     </GridItem>
 
                 </Grid>

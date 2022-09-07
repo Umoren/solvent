@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Center, Select } from "@chakra-ui/react";
+import { Box, Heading, Text, Center, Link } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import NewspaperPublications from "./NewspaperPublications";
 import NewspaperBackdated from "./NewspaperBackdated";
@@ -192,7 +192,9 @@ export default function CoverArea() {
                                 details and achievements to a Wikipedia biography page.
                             </Text>
 
-                            <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} />
+                            <Link href="/contact">
+                                <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} mt={8} />
+                            </Link>
                         </Center>
                     </Box>
                 }
@@ -212,7 +214,9 @@ export default function CoverArea() {
                                 frame work of personal details and organization statuses.
                             </Text>
 
-                            <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} />
+                            <Link href="/contact">
+                                <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} mt={8} />
+                            </Link>
                         </Center>
                     </Box>
                 }
@@ -233,7 +237,9 @@ export default function CoverArea() {
                                 to prevent further spread and curb impending damages.
                             </Text>
 
-                            <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} />
+                            <Link href="/contact">
+                                <GenericButton label={"CONTACT US"} bgColor={'#15BE60'} textColor={'#fff'} mt={8} />
+                            </Link>
                         </Center>
                     </Box>
                 }

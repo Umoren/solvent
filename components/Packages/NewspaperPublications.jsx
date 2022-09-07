@@ -1,4 +1,4 @@
-import { Box, Center, Grid, GridItem, Heading, Image, Text, Badge } from "@chakra-ui/react"
+import { Box, Center, Grid, GridItem, Heading, Image, Text, Badge, Link } from "@chakra-ui/react"
 import GenericButton from "./Button";
 
 const NewspaperPublications = () => {
@@ -26,8 +26,9 @@ const NewspaperPublications = () => {
                                 1 publication
                             </Text>
                         </Box>
-
-                        <GenericButton textColor={'#15BE60'} />
+                        <Link href="https://forms.gle/ta9x3UvF3yaprhEH6">
+                            <GenericButton textColor={'#15BE60'} />
+                        </Link>
                     </GridItem>
 
                     <GridItem display="flex" flexDirection={'column'}>
@@ -70,8 +71,9 @@ const NewspaperPublications = () => {
                                 15% possible discount
                             </Text>
                         </Box>
-
-                        <GenericButton bgColor={'#15BE60'} textColor={'#fff'} />
+                        <Link href="https://forms.gle/ta9x3UvF3yaprhEH6">
+                            <GenericButton textColor={'#15BE60'} />
+                        </Link>
                     </GridItem>
 
                     <GridItem display="flex" flexDirection={'column'}>
@@ -108,8 +110,9 @@ const NewspaperPublications = () => {
                                 10% possible discount
                             </Text>
                         </Box>
-
-                        <GenericButton textColor={'#15BE60'} />
+                        <Link href="https://forms.gle/ta9x3UvF3yaprhEH6">
+                            <GenericButton textColor={'#15BE60'} />
+                        </Link>
                     </GridItem>
 
                 </Grid>
