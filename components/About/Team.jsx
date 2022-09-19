@@ -33,7 +33,7 @@ export default function Team() {
                 <Box>
                     <Grid templateColumns={{ md: 'repeat(3, 1fr)' }} gap={24} my={12}>
                         <GridItem>
-                            <Image src={'/assets/team2.jpeg'} alt="team member" objectFit={'cover'} borderRadius={'100%'} width={'180px'} height={'180px'} />
+                            <Image src={'/assets/unique.jpeg'} alt="team member" objectFit={'cover'} borderRadius={'100%'} width={'180px'} height={'180px'} />
                             <Heading
                                 as="h5"
                                 fontSize={{ md: '22px' }}
