@@ -1,7 +1,7 @@
 import { Box, Icon } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 
-export default function GenericButton({ bgColor, textColor, label, mt }) {
+export default function GenericButton({ bgColor, textColor, label, mt, style }) {
     return (
         <Box
             color={'#fff'}
@@ -37,6 +37,8 @@ export default function GenericButton({ bgColor, textColor, label, mt }) {
                     boxShadow:
                         '0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)',
                 }}
+
+                style={{ ...style }}
             >
                 {label ? label : 'Get Started'}
                 <Icon

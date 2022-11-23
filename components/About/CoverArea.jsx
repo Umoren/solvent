@@ -1,4 +1,5 @@
-import { Box, Heading, Text, Center } from "@chakra-ui/react";
+import { Box, Heading, Text, Center, Link } from "@chakra-ui/react";
+import Button from '../Packages/Button';
 
 export default function CoverArea() {
     return (
@@ -46,6 +47,16 @@ export default function CoverArea() {
                     Over the years, the brand has succeeded in providing clients across the world with topnotch services. These services are however utilized to propagate and provide a framework through which people are viewed and understood positively. The overarching goal of the brand is centered on image and capacity building, which is illustrated through the multifaceted functions of the brand. Our utmost value is to create a reliable management style which thrives in a trusting environment. However, we deliver
                     superlative, resourceful, and tactical communications which are reinforced by the industry’s leading processes.
                 </Text>
+
+                <Box my={8}>
+                    <Link
+                        href="https://drive.google.com/file/d/1Wlt0emC4SNrRP4u61gBngNvLK83LfCLy/view?usp=sharing"
+                    >
+
+                        <Button label="View our Portfolio" style={{ fontSize: "14px" }} />
+                    </Link>
+                </Box>
+
             </Center>
 
         </Box>

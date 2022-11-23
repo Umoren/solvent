@@ -39,8 +39,7 @@ export default function Value() {
 
                 <LinkBox mt={4}>
                     <Link
-                        as={NextLink}
-                        to="/"
+                        href="https://drive.google.com/file/d/1Wlt0emC4SNrRP4u61gBngNvLK83LfCLy/view?usp=sharing"
                         color="#15BE60"
                         fontWeight="400"
                         lineHeight="19.2px"
