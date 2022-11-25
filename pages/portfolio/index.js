@@ -15,7 +15,9 @@ const Portfolio = () => {
                     mb={8}
                 > Our Portfolio</Heading>
 
-                <Text textAlign={'center'}> We have a very strong Portfolio in Verification, Production, and Publication</Text>
+                <Text textAlign={'center'}>
+                    Over the years we’ve built a large portfolio in helping clients with Productions, Social Media verification and Publications
+                </Text>
             </Box>
 
             <Box >
