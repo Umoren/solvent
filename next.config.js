@@ -4,7 +4,7 @@ const nextConfig = {
   //swcMinify: true,
   images: {
     loader: "default",
-    domains: ["solvent-blog.herokuapp.com"],
+    domains: ["solvent-blog.herokuapp.com", "res.cloudinary.com"],
   },
 }
 

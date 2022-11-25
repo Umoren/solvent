@@ -50,7 +50,7 @@ export default function CoverArea() {
 
                 <Box my={8}>
                     <Link
-                        href="https://drive.google.com/file/d/1Wlt0emC4SNrRP4u61gBngNvLK83LfCLy/view?usp=sharing"
+                        href="/portfolio"
                     >
 
                         <Button label="View our Portfolio" style={{ fontSize: "14px" }} />
